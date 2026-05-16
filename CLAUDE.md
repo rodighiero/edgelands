@@ -49,11 +49,13 @@ Layers fade in/out based on zoom level: contours, clusters, fronts, and keywords
 
 ### Data pipeline
 
-`data/` contains three Jupyter notebooks that produce `src/data/entities.csv`:
+`data/` contains Jupyter notebooks that produce `src/data/entities.csv`:
 
 1. **1-Download.ipynb** — fetches full article text via the Internet Archive (Wayback Machine)
 2. **2-Tag.ipynb** — classifies articles using the NYT news labeler API
 3. **3-Analyze.ipynb** — extracts named entities (persons, orgs, GPE) with spaCy, computes co-occurrence frequencies and trends
+4. **analysis.ipynb** — additional analysis notebook
+5. **download.png** — screenshot/image related to the download step
 
 ### Build output
 
