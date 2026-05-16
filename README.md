@@ -35,7 +35,6 @@ data/                 # Raw data and Jupyter notebooks for preprocessing
 ├── 2-Tag.ipynb                             # Classify articles with NYT news labeler
 ├── 3-Analyze.ipynb                         # Extract entities and compute trends
 ├── analysis.ipynb                          # UMAP/HDBSCAN layout and clustering
-├── download.png                            # Screenshot of the download step
 ├── Query_NYT_13y_surveillance.csv          # Source article metadata
 └── Query_NYT_13y_surveillance.feather      # Source article metadata (binary format)
 ```
