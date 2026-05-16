@@ -47,6 +47,14 @@ Layers fade in/out based on zoom level: contours, clusters, fronts, and keywords
 
 `src/interface/click.js` — handles entity clicks; populates the `#focus` sidebar panel with name, type, frequency, slope, Wikipedia link, yearly bar chart (Unicode blocks), and article URLs.
 
+### Data pipeline
+
+`data/` contains three Jupyter notebooks that produce `src/data/entities.csv`:
+
+1. **1-Download.ipynb** — fetches full article text via the Internet Archive (Wayback Machine)
+2. **2-Tag.ipynb** — classifies articles using the NYT news labeler API
+3. **3-Analyze.ipynb** — extracts named entities (persons, orgs, GPE) with spaCy, computes co-occurrence frequencies and trends
+
 ### Build output
 
 Vite builds to `/docs` (used for GitHub Pages deployment). `index.html` at the repo root is the entry point and contains the UI overlay markup (title, legend). `vite.config.js` sets `base: '/edgelands/'` for correct asset paths on GitHub Pages and treats `.fnt` and `.csv` files as static URL assets.
