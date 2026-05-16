@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 npm install        # install dependencies
-npm start          # dev server at http://localhost:8080 (hot reload)
+npm start          # dev server at http://localhost:5173 (hot reload)
 npm run build      # production build → /docs
 ```
 
@@ -49,4 +49,4 @@ Layers fade in/out based on zoom level: contours, clusters, fronts, and keywords
 
 ### Build output
 
-Webpack builds to `/docs` (used for GitHub Pages deployment). The HTML template at `src/assets/index.html` contains the UI overlay markup (title, legend, focus panel).
+Vite builds to `/docs` (used for GitHub Pages deployment). `index.html` at the repo root is the entry point and contains the UI overlay markup (title, legend). `vite.config.js` sets `base: '/edgelands/'` for correct asset paths on GitHub Pages and treats `.fnt` and `.csv` files as static URL assets.
