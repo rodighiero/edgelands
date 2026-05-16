@@ -31,6 +31,13 @@ src/
 └── assets/           # Fonts, background image, CSS
 
 data/                 # Raw data and Jupyter notebooks for preprocessing
+├── 1-Download.ipynb                        # Fetch article texts via Wayback Machine
+├── 2-Tag.ipynb                             # Classify articles with NYT news labeler
+├── 3-Analyze.ipynb                         # Extract entities and compute trends
+├── analysis.ipynb                          # UMAP/HDBSCAN layout and clustering
+├── download.png                            # Screenshot of the download step
+├── Query_NYT_13y_surveillance.csv          # Source article metadata
+└── Query_NYT_13y_surveillance.feather      # Source article metadata (binary format)
 ```
 
 ## Data Analysis
@@ -40,3 +47,4 @@ The `data/` folder contains the preprocessing pipeline that produces `src/data/e
 - **1-Download.ipynb** — Takes a CSV of NYT article URLs and fetches the full text of each article via the Internet Archive (Wayback Machine).
 - **2-Tag.ipynb** — Classifies each article using the [NYT news labeler](https://github.com/NYTimes/nyt-news-labeler) to assign topic descriptors.
 - **3-Analyze.ipynb** — Extracts named entities (persons, organizations, geopolitical entities) from each article using spaCy, then computes co-occurrence frequencies and trends to produce the final dataset.
+- **analysis.ipynb** — Applies UMAP for dimensionality reduction and HDBSCAN for clustering, then aligns entities to a grid to produce the 2D layout coordinates used for visualization.
