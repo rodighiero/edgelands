@@ -30,3 +30,11 @@ src/
 
 data/                 # Raw data and Jupyter notebooks for preprocessing
 ```
+
+## Data Analysis
+
+The `data/` folder contains the preprocessing pipeline that produces `src/data/entities.csv`:
+
+- **1-Download.ipynb** — Takes a CSV of NYT article URLs and fetches the full text of each article via the Internet Archive (Wayback Machine).
+- **2-Tag.ipynb** — Classifies each article using the [NYT news labeler](https://github.com/NYTimes/nyt-news-labeler) to assign topic descriptors.
+- **3-Analyze.ipynb** — Extracts named entities (persons, organizations, geopolitical entities) from each article using spaCy, then computes co-occurrence frequencies and trends to produce the final dataset.
