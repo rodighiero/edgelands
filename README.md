@@ -6,6 +6,10 @@ Red marks emerging entities (increasing over time), blue marks disappearing ones
 
 Built as part of [Edgelands Institute](https://www.edgelands.institute)'s research on the increasing digitalization of security in cities — mapping who and what appears in public discourse around surveillance, and how that changes over time.
 
+## Reference
+
+Rodighiero, Dario, and Jean Daniélou. 2023. "Weather Map: A Diachronic Visual Model for Controversy Mapping." In *Zoomland: Exploring Scale in Digital History and Humanities*, edited by Florentina Armaselu and Andreas Fickers. De Gruyter. https://doi.org/10.1515/9783111317779-017
+
 ## Structure
 
 ```
